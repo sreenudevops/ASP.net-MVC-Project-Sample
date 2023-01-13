@@ -5,6 +5,12 @@
     ScriptType: 'InlineScript'
     Inline: 'write-host "hello world"'
     azurePowerShellVersion: 'LatestVersion'
+- task: AzurePowerShell@5
+  inputs:
+    azureSubscription: 'Free Trial (de16e55a-6c33-4d92-bdee-4a4221eb3151)'
+    ScriptType: 'InlineScript'
+    Inline: 'Write-Host "hello world"'
+    preferredAzurePowerShellVersion: '7.0.1'
 # Build and test ASP.NET Core projects targeting the full .NET Framework.
 # Add steps that publish symbols, save build artifacts, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
